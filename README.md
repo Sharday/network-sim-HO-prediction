@@ -50,10 +50,10 @@ To demonstrate the integration, the current use case of handover prediction is i
 * A queue structure is used to store and update the recent history of RSRP and RSRQ values within the agent
 * At each timestep, the processes interact via the interface: the agent collects 'observations' of RSRP and RSRQ values from the simulation, predictions are produced by the ML ensemble, and these are fed back to the simulation as 'actions'
 
-Please copy the ML-simulation directory into the scratch folder of ns3-gym and rebuild. Please ensure that the required dependencies for loading and running your Python models have been installed. The simulation can be run by executing:
+Please copy the ML-ns3 directory into the scratch folder of ns3-gym and rebuild. Please ensure that the required dependencies for loading and running your Python models have been installed. The simulation can be run by executing:
 
 ```Python
-./waf --run "ML-simulation"
+./waf --run "ML-ns3"
 ```
 
 and the Python process can be run from the scratch directory using:
